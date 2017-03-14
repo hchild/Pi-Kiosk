@@ -60,8 +60,8 @@
         b. crontab -e
             i. Add the following lines to the bottom.The first line restarts the pi everyday at 9:10 A.M
                You can add as many times as needed just remember to use 24 hour clock.
-                      1. 10 9 * * * sudo reboot  
-                      2. 0 20 * * * sudo reboot
+                  1. 10 9 * * * sudo reboot  
+                  2. 0 20 * * * sudo reboot
 
 11.	Install script for kiosk
 

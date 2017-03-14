@@ -42,13 +42,13 @@ Each task below is done through terminal which can be opened using CTRL+ALT+T
 9.	Disable screen blanking & timeout
 
 		a. https://www.bitpi.co/2015/02/14/prevent-raspberry-pi-from-sleeping/
-		b. sudo nano /etc/kbd.config
+		b. sudo nano /etc/kbd/config
 			i. Set the following to the values shown below
                  		1. BLANK_TIME =0
                  		2. POWERDOWN_TIME=0
                 		3. CTRL+X and then Y to Save
 		c. sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
-			i. add these lines
+			i. add these lines and comment out the @xscreensaver line
                  		1. @xset s noblank
                  		2. @xset s off
                  		3. @xset –dpms
@@ -60,15 +60,15 @@ Each task below is done through terminal which can be opened using CTRL+ALT+T
 11.	Schedule Auto Reboot 
 
 		a. sudo -s
-        b. crontab -e
-            i. Add the following lines to the bottom.The first line restarts the pi everyday at 9:10 A.M
-               You can add as many times as needed just remember to use 24 hour clock.
-                  1. 10 9 * * * sudo reboot  
-                  2. 0 20 * * * sudo reboot
+		b. crontab -e
+           		i. Add the following lines to the bottom.The first line restarts the pi everyday at 9:10 A.M
+                   	   You can add as many times as needed just remember to use 24 hour clock.
+                		1. 10 9 * * * sudo reboot  
+                		2. 0 20 * * * sudo reboot
 
 11.	Install script for kiosk
 
-		a. leafpad pi-kiosk/home/pi/start-kiosk.sh
-            i. edit last line after incognito with desired URL and then Save and close
-        b. cd pi-kiosk
-        c. bash install.sh
+		a. leafpad pi-kiosk/home/pi/start-kiosk.sh &
+            		i. edit last line after incognito with desired URL and then Save and close
+		b. cd pi-kiosk
+		c. bash install.sh

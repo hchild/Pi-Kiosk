@@ -1,8 +1,10 @@
+Each task below is done through terminal which can be opened using CTRL+ALT+T
+
 1.	Copy directory and open readme
 
 		a. CTRL+ALT+T      => Open Terminal
 		b. git clone https://github.com/hchild/pi-kiosk
- 		c. leafpad pi-kiosk/README.md
+ 		c. leafpad pi-kiosk/README.md &
 
 2.	Run to update Sources
 

@@ -46,13 +46,13 @@ Each task below is done through terminal which can be opened using CTRL+ALT+T
 			i. Set the following to the values shown below
                  		1. BLANK_TIME =0
                  		2. POWERDOWN_TIME=0
-                		3. CTRL+X and then Y to Save
+                		3. CTRL+X and then Y and ENTER to save
 		c. sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
 			i. add these lines and comment out the @xscreensaver line
                  		1. @xset s noblank
                  		2. @xset s off
                  		3. @xset –dpms
-                		4. CTRL+X and then Y to Save
+                		4. CTRL+X and then Y and ENTER to save
 		d. sudo nano /etc/lightdm/lightdm.conf
 			i. Add anywhere below the [SeatDefaults] Header
                 	 	1. xserver-command=X –s 0 –dpms
